@@ -21,7 +21,7 @@ def read_specialty() -> SpecialtyType:
     df["Specialization"] = df.apply(
         lambda row: (
             row["Classification"] if pd.isna(row["Specialization"]) or row["Specialization"] == ""
-            else f'{row["Classification"]}:{row["Specialization"]}'
+            else f'{row["Classification"]}: {row["Specialization"]}'
         ),
         axis=1
     )
