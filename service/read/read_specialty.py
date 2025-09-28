@@ -14,8 +14,17 @@ def read_specialty() -> SpecialtyType:
 
     df = pd.read_csv(csv_path)
 
-    # If specialization column in the csv does not have a value, use the value in the classification column
-    df['Specialization'] = df['Specialization'].fillna(df['Classification'])
+    # Transformation
+    # If a specialization column in the csv does not have a value, use the value in the classification column
+    # if it does have a value, then append the classification to the specialization
+
+    df["Specialization"] = df.apply(
+        lambda row: (
+            row["Classification"] if pd.isna(row["Specialization"]) or row["Specialization"] == ""
+            else f'{row["Classification"]}:{row["Specialization"]}'
+        ),
+        axis=1
+    )
 
     groups: list[Group] = []
     for group_name, group_df in df.groupby('Grouping'):
