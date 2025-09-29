@@ -1,6 +1,6 @@
 from typing import Any
 
-from models.aton.nodes.data_dictionary import DataDictionary
+from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
 from service.transform.transform_specialty import transform_specialty
 
 

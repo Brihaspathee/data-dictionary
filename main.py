@@ -2,7 +2,7 @@ import logging
 
 from config import settings
 from db import init_db
-from models.data_classes.specialtytype import SpecialtyType
+from models.data_classes.specialty_type import SpecialtyType
 from service.read.read_specialty import read_specialty
 from service.transform.transform import transform
 from service.write.upsert_data_dictionary import upsert_data_dictionary

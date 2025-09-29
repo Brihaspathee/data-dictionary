@@ -1,4 +1,4 @@
-from models.aton.nodes.data_dictionary import DataDictionary
+from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
 from service.write.upsert_specialty import upsert_specialty
 
 

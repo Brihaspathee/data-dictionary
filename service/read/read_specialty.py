@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from models.data_classes.specialtytype import Group, SpecialtyType, Classification, Specialization
+from models.data_classes.specialty_type import Group, SpecialtyType, Classification, Specialization
 import logging
 
 log = logging.getLogger(__name__)

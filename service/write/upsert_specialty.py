@@ -1,8 +1,8 @@
-from models.aton.nodes.data_dictionary import DataDictionary
-from models.aton.nodes.dd_specialty import DD_Specialty
-from models.aton.nodes.specialty import Specialty
-from models.aton.nodes.specialty_classification import SpecialtyClassification
-from models.aton.nodes.specialty_group import SpecialtyGroup
+from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
+from models.aton.nodes.data_dictionary.dd_specialty import DD_Specialty
+from models.aton.nodes.data_dictionary.specialty import Specialty
+from models.aton.nodes.data_dictionary.specialty_classification import SpecialtyClassification
+from models.aton.nodes.data_dictionary.specialty_group import SpecialtyGroup
 import logging
 
 log = logging.getLogger(__name__)
