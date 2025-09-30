@@ -8,18 +8,14 @@ from models.data_classes.specialty_type import SpecialtyType
 
 def transform_specialty(specialty_type: SpecialtyType) -> DataDictionary:
     specialty: Specialty = Specialty(definition="Specialty node definition")
-    for group in specialty_type.groups:
-        specialty_group = SpecialtyGroup(name=group.groupName)
-        for classification in group.classifications:
-            specialty_classification = SpecialtyClassification(
-                name=classification.classificationName)
-            specialty_group.add_classification(specialty_classification)
-            for specialization in classification.specializations:
-                dd_specialty = DD_Specialty(name=specialization.name,
-                                            taxonomy=specialization.taxonomy,
-                                            definition=specialization.definition)
-                specialty_classification.add_specialization(dd_specialty)
-        specialty.add_group(specialty_group)
+    for specialization in specialty_type.specializations:
+        dd_specialty = DD_Specialty(specialization=specialization.specialization,
+                                    taxonomy=specialization.taxonomy,
+                                    definition=specialization.definition,
+                                    group=specialization.group,
+                                    classification=specialization.classification,
+                                    value=specialization.value)
+        specialty.add_specialization(dd_specialty)
     data_dictionary: DataDictionary = DataDictionary(definition="Top level Data Dictionary node")
     data_dictionary.set_specialty(specialty)
     return data_dictionary

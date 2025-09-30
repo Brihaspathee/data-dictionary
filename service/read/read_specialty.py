@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from models.data_classes.specialty_type import Group, SpecialtyType, Classification, Specialization
+from models.data_classes.specialty_type import SpecialtyType, Specialization
 import logging
 
 log = logging.getLogger(__name__)
@@ -16,32 +16,36 @@ def read_specialty() -> SpecialtyType:
 
     # Transformation
     # If a specialization column in the csv does not have a value, use the value in the classification column
-    # if it does have a value, then append the classification to the specialization
+    df["Specialization"] = df["Specialization"].fillna(df["Classification"])
 
-    df["Specialization"] = df.apply(
-        lambda row: (
-            row["Classification"] if pd.isna(row["Specialization"]) or row["Specialization"] == ""
-            else f'{row["Classification"]}: {row["Specialization"]}'
-        ),
-        axis=1
-    )
+    # df["Specialization"] = df.apply(
+    #     lambda row: (
+    #         row["Classification"] if pd.isna(row["Specialization"]) or row["Specialization"] == ""
+    #         else f'{row["Classification"]}: {row["Specialization"]}'
+    #     ),
+    #     axis=1
+    # )
 
-    groups: list[Group] = []
+    specializations: list[Specialization] = []
     for group_name, group_df in df.groupby('Grouping'):
-        classifications: list[Classification] = []
         for classification_name, classification_df in group_df.groupby('Classification'):
-            specializations: list[Specialization] = []
             for _, row in classification_df.iterrows():
-                specialization = Specialization(name=row['Specialization'],
-                                                taxonomy=row['Code'],
-                                                 definition=row['Definition'])
+                specialization =  row['Specialization']
+                classification = row['Classification']
+                group = row['Grouping']
+                taxonomy = row['Code']
+                definition = row['Definition']
+                value = specialization
+                if specialization != classification:
+                    log.debug(f"Specialization {specialization} != Classification {classification}")
+                    value = f'{classification}: {specialization}'
+                specialization = Specialization(specialization=specialization,
+                                                taxonomy=taxonomy,
+                                                 definition=definition,
+                                                group=group,
+                                                classification=classification,
+                                                value=value)
                 specializations.append(specialization)
-            classification = Classification(classificationName=classification_name,
-                                            specializations=specializations)
-            classifications.append(classification)
-        group = Group(groupName=group_name,
-                      classifications=classifications)
-        groups.append(group)
-    specialty:SpecialtyType = SpecialtyType(groups=groups)
+    specialty:SpecialtyType = SpecialtyType(specializations=specializations)
 
     return specialty
