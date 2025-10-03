@@ -10,7 +10,7 @@ def transform_specialty(specialty_type: SpecialtyType) -> DataDictionary:
     specialty: Specialty = Specialty(definition="Specialty node definition")
     for specialization in specialty_type.specializations:
         dd_specialty = DD_Specialty(specialization=specialization.specialization,
-                                    taxonomy=specialization.taxonomy,
+                                    taxonomyCode=specialization.taxonomy,
                                     definition=specialization.definition,
                                     group=specialization.group,
                                     classification=specialization.classification,
