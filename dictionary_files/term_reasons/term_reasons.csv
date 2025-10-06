@@ -1,0 +1,108 @@
+value,short_descrption,long_description
+DPE,Duplicate,Duplicate
+RTD,Retired,Retired
+RLD,Relocated,Relocated
+PD,Provider Deceased,Provider Deceased
+FRC,Failed Credentialing,Failed Credentialing
+NAWMP,Not Active with Medicaid Program,Not Active with Medicaid Program
+PLE,Plan Error,Plan Error
+TDTQA,Terminated Due to Quality Assurance,Terminated Due to Quality Assurance
+PCP,Provider Closed Practice,Provider Closed Practice
+RMA,Refused MAID Application,Refused MAID Application
+PTIN,Purchased/TIN change,Purchased/TIN change
+HIU,Header Info Update,Header Info Update
+NOTTIED,Not tied to TIN at HP,Not tied to TIN at HP
+FAILOC,Failure to comply with OAC 2913.02(A),Failure to comply with OAC 2913.02(A)
+OT,Other,Other
+DACAR,Due to ACA Revalidation,Due to ACA Revalidation
+LSE,License Suspended/Expired,License Suspended/Expired
+MTWC,MCO Term - Without Cause,MCO Term - Without Cause
+MTC,MCO Terminated for Cause,MCO Terminated for Cause
+NLCWM,No Longer Contracted with MCO,No Longer Contracted with MCO
+NAM,Not Accepting Medicaid,Not Accepting Medicaid
+PLGP,Provider Left Group Practice,Provider Left Group Practice
+PPOIS,Provider Placed on Inactive Status,Provider Placed on Inactive Status
+PTR,Provider Term - Rate,Provider Term - Rate
+RIE,Received Incorrect Enrollment,Received Incorrect Enrollment
+TRBP,Termination Requested by Provider,Termination Requested by Provider
+TRBG,Termination Required by Gov't,Termination Required by Gov't
+OIG,OIG,OIG
+COO,Change of Ownership,Change of Ownership
+ABP,Abuse of Billing Privileges,Abuse of Billing Privileges
+ATMC,Action Taken by Medicaid/CHIP,Action Taken by Medicaid/CHIP
+ATM,Action Taken by Medicare,Action Taken by Medicare
+FCAO,Failure to report a change of address/ownership,Failure to report a change of address/ownership
+FMI,False or Misleading Information,False or Misleading Information
+FED,"Federal Exclusion/Debarment, Etc","Federal Exclusion/Debarment, Etc"
+FCV,Felony Conviction,Felony Conviction
+IT,Involuntary Termination,Involuntary Termination
+LE,License Expired,License Expired
+LR,License Revoked,License Revoked
+LOLS,Loss of License or other State Action,Loss of License or other State Action
+MBN,Misuse of billing number,Misuse of billing number
+MME,Medicare/Medicaid Exclusion,Medicare/Medicaid Exclusion
+MA,Medicaid Authority,Medicaid Authority
+MT,Medicare Termination,Medicare Termination
+NCA,No Claims Activity,No Claims Activity
+NC,Non-Compliance,Non-Compliance
+ORPO,Onsite Review/Provider no longer operational,Onsite Review/Provider no longer operational
+SED,"State Exclusion/Debarment, etc","State Exclusion/Debarment, etc"
+UN,Unknown,Unknown
+VY,Voluntary Termination,Voluntary Termination
+FSCI,Failure to send Cred/ReCred Information,Failure to send Cred/ReCred Information
+LN,Lexis Nexis Data,Termed based on Lexis Nexis Data.
+DUPMP,DUPS TERMED / MP PROJECT,"DUPS TERMED / MP PROJECT 
+"
+CFPTS,Changed From PCP to SP,Changed From PCP to SP
+AFFLMP,Affiliation Move Process,Affiliation Move Process
+CIE,Created in Error,Created in Error
+EP,Excluded Provider,Excluded Provider
+CC\FID,CC\FID Merge,CC\FID Merge
+CPNON-Par,Collaborating Physician Non-Par,Collaborating Physician Non-Par
+Denied,Denied,Denied
+HHCCONTPCPT,HHC PCP Contracts Termed,HHC PCP Contracts Termed
+ICLL,Inactive License,Inactive License
+NNO BEHAVIORABC,No Behavioral Health Contract,No Behavioral Health Contract
+NoCon,No Contract,No Contract
+OMHAROASISP,OMH/OASIS/Article 28 Provider,OMH/OASIS/Article 28 Provider
+PARPAR/COVERINGCO,PAR/Covering Provider Only,PAR/Covering Provider Only
+TCHANGIDC,Tax ID Change,Tax ID Change
+WOFF,Withdrew from Fidelis,Withdrew from Fidelis
+CGNN,Contract Negotiations,Contract Negotiations
+DYTT,Disciplinary Termination,Disciplinary Termination
+NPP,NonPar Prov Became Par Prov,NonPar Prov Became Par Prov
+FESC,Fee Schedule Change,Fee Schedule Change
+PBTP,Prov. Term.By Plan,Prov. Term.By Plan
+NNOT CURRNYSED,Not Currently Registered-NYSED,Not Currently Registered-NYSED
+FCNYRENNR,FCNY Non-Renewal Due to Rates,FCNY Non-Renewal Due to Rates
+PLONO,Prgram No Longer Operational,Prgram No Longer Operational
+HSSHSS REIMBURSRC,HSS Reimburs Number Changed,HSS Reimburs Number Changed
+TCHANGIDWITCO,Tax ID Change without Contract,Tax ID Change without Contract
+PPROVIDER WITWF,Provider Withdrew from Fidelis,Provider Withdrew from Fidelis
+NAFLIPA,No Longer Affiliated with IPA,No Longer Affiliated with IPA
+PPROV WITWIPA,Provider Withdrew from IPA,Provider Withdrew from IPA
+PFLS,Provider Left Site,Provider Left Site
+PTU,"Prov. Term. by Plan, Unknown","Prov. Term. by Plan, Unknown"
+CFCCC,CenterCare/Fidelis Mrg CC only,CenterCare/Fidelis Mrg CC only
+ADDRCH,Address change,Address change
+IATI,Incorrect Tax Id,Incorrect Tax Id
+CCM,CenterCare/Fidelis Merge,CenterCare/Fidelis Merge
+HHCCONTPCPTED,HHC PCP Contracts Terminated,HHC PCP Contracts Terminated
+PPROV WITWCC,Provider Withdrew from CC,Provider Withdrew from CC
+SPECCH,Specialty change,Specialty change
+UUPDATE SUBMISP,Update Submitted by Provider,Update Submitted by Provider
+TERMRE,Term Reason,Term Reason
+NDAA,Not Assigned,Not Assigned
+LGRP,Left Group,Left Group
+DCSD,Deceased,Deceased
+LOA,Leave of absence,Leave of absence
+LARA,Left Area,Left Area
+NOMI,No Malpractice Insurance,No Malpractice Insurance
+NSHP,No Select Hospital Privileges,"No Select Hospital Privileges"
+QOC,Quality of Care,Quality of Care
+PRE,Preclude,Preclude
+FIC,Fail Initial - Cred Committee,Fail Initial - Cred Committee
+FSCR,Fail Recred - No Response,Fail Recred - No Response
+SSDMF,Social Security Death Master File,Social Security Death Master File
+RT,Provider Retired,Provider Retired
+LADV,License adverse disciplinary,License adverse disciplinary
