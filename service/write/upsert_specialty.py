@@ -10,13 +10,14 @@ def upsert_specialty(specialty: Specialty, data_dictionary: DataDictionary):
     if is_created:
         # log.debug(f"Specialty node created with element id {specialty_node.element_id}")
         data_dictionary.specialty.connect(specialty_node)
-    for dd_specialty in specialty_node.get_specializations():
+    for dd_specialty in specialty.context.get_dd_specialties():
         dd_specialty_node, is_dd_specialty_created = DD_Specialty.get_or_create(
             dd_specialty
         )
         if is_dd_specialty_created:
             # log.debug(f"Specialization {dd_specialty_node.value} created with element id {dd_specialty_node.element_id}")
             specialty_node.specialization.connect(dd_specialty_node)
-            for legacy_id in dd_specialty.get_legacy_ids():
+            dd_specialty_node.context = dd_specialty.context
+            for legacy_id in dd_specialty.context.get_legacy_ids():
                 legacy_id.save()
                 dd_specialty_node.legacySystemIdentifier.connect(legacy_id)

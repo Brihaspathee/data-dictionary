@@ -1,24 +1,19 @@
 from typing import Any
 
-from neomodel import StructuredNode, StringProperty, RelationshipTo
-from neomodel.exceptions import DoesNotExist
-
-from models.aton.nodes.data_dictionary.dd_specialty import DD_Specialty
+from neomodel import StructuredNode, StringProperty, RelationshipTo, DoesNotExist
 
 
-class Specialty(StructuredNode):
-
+class QualificationTypes(StructuredNode):
     definition: str = StringProperty(required=True)
 
-    specialization = RelationshipTo('models.aton.nodes.data_dictionary.dd_specialty.DD_Specialty', 'DEFINED_BY')
+    dd_qualification_type = RelationshipTo('models.aton.nodes.data_dictionary.dd_qualification_type.DD_QualificationType', 'DEFINED_BY')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.context: Any = None
 
-
     @classmethod
-    def get_or_create(cls, instance: "Specialty") -> tuple["Specialty", bool]:
+    def get_or_create(cls, instance: "QualificationTypes") -> tuple["QualificationTypes", bool]:
         try:
             node = cls.nodes.get(definition=instance.definition)
             created = False

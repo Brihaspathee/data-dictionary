@@ -1,3 +1,5 @@
+from typing import Any
+
 from neomodel import StructuredNode, StringProperty, RelationshipTo
 
 from models.aton.nodes.data_dictionary.specialty import Specialty
@@ -10,10 +12,4 @@ class DataDictionary(StructuredNode):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._pending_specialty: Specialty | None = None
-
-    def set_specialty(self, specialty: Specialty):
-        self._pending_specialty = specialty
-
-    def get_specialty(self):
-        return self._pending_specialty
+        self.context: Any = None

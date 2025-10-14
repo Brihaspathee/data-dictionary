@@ -1,3 +1,5 @@
+from typing import Any
+
 from neomodel import StructuredNode, StringProperty, RelationshipFrom, RelationshipTo
 from neomodel.exceptions import DoesNotExist
 
@@ -16,13 +18,7 @@ class DD_Specialty(StructuredNode):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._pending_legacy_ids: list[LegacySystemIdentifier] = []
-
-    def add_legacy_id(self, legacy_id: LegacySystemIdentifier):
-        self._pending_legacy_ids.append(legacy_id)
-
-    def get_legacy_ids(self):
-        return self._pending_legacy_ids
+        self.context: Any = None
 
     @classmethod
     def get_or_create(cls, instance: "DD_Specialty") -> tuple["DD_Specialty", bool]:
@@ -36,5 +32,5 @@ class DD_Specialty(StructuredNode):
                        group=instance.group,
                        classification=instance.classification).save()
             created = True
-
+        node.context = instance.context
         return node, created
