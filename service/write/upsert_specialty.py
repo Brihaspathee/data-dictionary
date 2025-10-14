@@ -1,8 +1,6 @@
 from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
 from models.aton.nodes.data_dictionary.dd_specialty import DD_Specialty
 from models.aton.nodes.data_dictionary.specialty import Specialty
-from models.aton.nodes.data_dictionary.specialty_classification import SpecialtyClassification
-from models.aton.nodes.data_dictionary.specialty_group import SpecialtyGroup
 import logging
 
 log = logging.getLogger(__name__)
@@ -19,3 +17,6 @@ def upsert_specialty(specialty: Specialty, data_dictionary: DataDictionary):
         if is_dd_specialty_created:
             # log.debug(f"Specialization {dd_specialty_node.value} created with element id {dd_specialty_node.element_id}")
             specialty_node.specialization.connect(dd_specialty_node)
+            for legacy_id in dd_specialty.get_legacy_ids():
+                legacy_id.save()
+                dd_specialty_node.legacySystemIdentifier.connect(legacy_id)

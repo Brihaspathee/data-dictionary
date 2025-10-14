@@ -2,14 +2,13 @@ from neomodel import StructuredNode, StringProperty, RelationshipTo
 from neomodel.exceptions import DoesNotExist
 
 from models.aton.nodes.data_dictionary.dd_specialty import DD_Specialty
-from models.aton.nodes.data_dictionary.specialty_group import SpecialtyGroup
 
 
 class Specialty(StructuredNode):
 
     definition: str = StringProperty(required=True)
 
-    specialization = RelationshipTo('DD_Specialty', 'DEFINED_BY')
+    specialization = RelationshipTo('models.aton.nodes.data_dictionary.dd_specialty.DD_Specialty', 'DEFINED_BY')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

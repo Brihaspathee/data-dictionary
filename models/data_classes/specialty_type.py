@@ -3,38 +3,23 @@ from dataclasses import dataclass, field
 
 @dataclass
 class Specialization:
-    specialization: str
-    taxonomy: str
-    definition: str
+    code: str
+    value: str
+    description: str
     group: str
     classification: str
-    value: str
+    portico_ds: str
+    spec_id: str
+
 
     def __str__(self):
-        return (f"Specialization: {self.name},"
-                f" taxonomy: {self.taxonomy},"
-                f" definition: {self.definition}"
+        return (f" code: {self.code},"
+                f" value: {self.value}"
+                f" description: {self.description},"
                 f" group: {self.group},"
                 f" classification: {self.classification},"
-                f" value: {self.value}")
-
-# @dataclass
-# class Classification:
-#     classificationName: str
-#     specializations: list[Specialization] = field(default_factory=list)
-#
-#     def __str__(self):
-#         return (f"SpecialtyClassification: {self.classificationName},"
-#                 f" specializations: {self.specializations}")
-#
-# @dataclass
-# class Group:
-#     groupName: str
-#     classifications: list[Classification] = field(default_factory=list)
-#
-#     def __str__(self):
-#         return (f"SpecialtyGroup: {self.groupName},"
-#                 f" specialtyClassifications: {self.classifications}")
+                f" portico_ds: {self.portico_ds},"
+                f" spec_id: {self.spec_id}")
 
 @dataclass
 class SpecialtyType:
