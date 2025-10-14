@@ -1,13 +1,14 @@
-value,definition
-Ancillary,"An organization that provides supportive healthcare services (e.g., laboratory, imaging, or rehabilitation) rather than primary medical care."
-Clinic,"A facility where patients receive outpatient medical care, typically from physicians, nurse practitioners, or physician assistants."
-FQHC,"Federally Qualified Health Center – A community-based healthcare organization that receives federal funding to provide comprehensive primary and preventive care services, regardless of patients’ ability to pay, often serving medically underserved areas or populations."
-Group Practice,A healthcare practice where multiple providers (often physicians of the same or different specialties) work together to deliver care.
-Hospital,"A licensed healthcare institution that provides inpatient, outpatient, emergency, and surgical services."
-Vision,"An organization focused on eye health services, such as optometry, ophthalmology, and vision correction."
-Dental,"A practice or facility that delivers oral health services, including preventive, diagnostic, and surgical dental care."
-Behavioral Health ,"An organization providing mental health and substance use disorder services, such as counseling, therapy, and psychiatric care."
-Pharmacy,A licensed facility that dispenses prescription medications and may offer medication management or counseling.
-Transportation,A service provider that offers non-emergency medical transportation for patients to and from healthcare facilities.
-Durable Medical Equipment,"An organization that supplies medical equipment and devices for repeated use, such as wheelchairs, oxygen equipment, or hospital beds."
-PPG,Participating Physician Group
+code,value,description
+ANC,Ancillary,"An organization that provides supportive healthcare services (e.g., laboratory, imaging, or rehabilitation) rather than primary medical care."
+CLINIC,Clinic,"A facility where patients receive outpatient medical care, typically from physicians, nurse practitioners, or physician assistants."
+FQHC,Federally Qualified Health Center,"Federally Qualified Health Center – A community-based healthcare organization that receives federal funding to provide comprehensive primary and preventive care services, regardless of patients’ ability to pay, often serving medically underserved areas or populations."
+GP,Group Practice,A healthcare practice where multiple providers (often physicians of the same or different specialties) work together to deliver care.
+RHC,Rural Health Clinic,A Rural Health Clinic (RHC) is a healthcare facility certified to provide primary care and preventive services in underserved rural areas. RHCs aim to improve access to healthcare by offering essential medical services to communities with limited provider availability.
+HOSP,Hospital,"A licensed healthcare institution that provides inpatient, outpatient, emergency, and surgical services."
+VISION,Vision,"An organization focused on eye health services, such as optometry, ophthalmology, and vision correction."
+DENTAL,Dental,"A practice or facility that delivers oral health services, including preventive, diagnostic, and surgical dental care."
+BH,Behavioral Health ,"An organization providing mental health and substance use disorder services, such as counseling, therapy, and psychiatric care."
+PHAR,Pharmacy,A licensed facility that dispenses prescription medications and may offer medication management or counseling.
+TRANSP,Transportation,A service provider that offers non-emergency medical transportation for patients to and from healthcare facilities.
+DME,Durable Medical Equipment,"An organization that supplies medical equipment and devices for repeated use, such as wheelchairs, oxygen equipment, or hospital beds."
+PPG,PPG,Participating Physician Group
