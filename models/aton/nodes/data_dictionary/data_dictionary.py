@@ -9,6 +9,7 @@ class DataDictionary(StructuredNode):
     definition: str = StringProperty(required=True)
 
     specialty = RelationshipTo('models.aton.nodes.data_dictionary.specialty.Specialty', 'SPECIALTIES_DEFINED')
+    qualification = RelationshipTo('models.aton.nodes.data_dictionary.qualification_types.QualificationTypes', 'QUALIFICATIONS_DEFINED')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

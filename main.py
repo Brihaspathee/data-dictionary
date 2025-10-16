@@ -18,20 +18,20 @@ def main():
     log.debug(f"Running on {settings.ENVIRONMENT} environment")
     log.debug(f"NEO4J info {settings.NEO4J} environment")
     logging.basicConfig(level=logging.DEBUG)
+    data_dictionaries = []
     qual_types: QualTypes = read_qualifications()
     log.error(f"Qualifications length: {len(qual_types.qualifications)}")
     log.error(f"Qualifications: {qual_types.qualifications}")
-    # portico_db: PorticoDB = PorticoDB()
-    # portico_db.connect()
-    # init_db()
-    # with portico_db.SessionLocal() as session:
-    #     read_spec_tax(session)
-    # specialty: SpecialtyType = read_specialty()
-    # dataDictionaries = []
-    # dataDictionaries.append(specialty)
-    # # # log.debug(specialty)
-    # data_dictionary = transform(dataDictionaries)
-    # upsert_data_dictionary(data_dictionary)
+    data_dictionaries.append(qual_types)
+    portico_db: PorticoDB = PorticoDB()
+    portico_db.connect()
+    init_db()
+    with portico_db.SessionLocal() as session:
+        read_spec_tax(session)
+    specialty: SpecialtyType = read_specialty()
+    data_dictionaries.append(specialty)
+    data_dictionary = transform(data_dictionaries)
+    upsert_data_dictionary(data_dictionary)
     # log.debug("Finished!")
 
 
