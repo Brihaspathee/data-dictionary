@@ -2,14 +2,14 @@ import weakref
 
 from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
 from models.aton.nodes.data_dictionary.qualification_types import QualificationTypes
-from models.aton.nodes.data_dictionary.specialty import Specialty
+from models.aton.nodes.data_dictionary.specialty_type import SpecialtyType
 
 
 class DataDictionaryContext:
 
     def __init__(self, data_dictionary:DataDictionary):
         self.data_dictionary = weakref.proxy(data_dictionary)
-        self.specialty: Specialty | None = None
+        self.specialty: SpecialtyType | None = None
         self.qualificationTypes: QualificationTypes | None = None
 
     def set_specialty(self, specialty):

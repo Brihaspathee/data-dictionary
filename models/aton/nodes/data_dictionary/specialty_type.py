@@ -3,14 +3,14 @@ from typing import Any
 from neomodel import StructuredNode, StringProperty, RelationshipTo
 from neomodel.exceptions import DoesNotExist
 
-from models.aton.nodes.data_dictionary.dd_specialty import DD_Specialty
+from models.aton.nodes.data_dictionary.dd_specialty_type import DD_SpecialtyType
 
 
-class Specialty(StructuredNode):
+class SpecialtyType(StructuredNode):
 
     definition: str = StringProperty(required=True)
 
-    specialization = RelationshipTo('models.aton.nodes.data_dictionary.dd_specialty.DD_Specialty', 'DEFINED_BY')
+    specialization = RelationshipTo('models.aton.nodes.data_dictionary.dd_specialty_type.DD_SpecialtyType', 'DEFINED_BY')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -18,7 +18,7 @@ class Specialty(StructuredNode):
 
 
     @classmethod
-    def get_or_create(cls, instance: "Specialty") -> tuple["Specialty", bool]:
+    def get_or_create(cls, instance: "SpecialtyType") -> tuple["SpecialtyType", bool]:
         try:
             node = cls.nodes.get(definition=instance.definition)
             created = False

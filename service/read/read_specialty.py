@@ -1,12 +1,12 @@
 import os
 import pandas as pd
-from models.data_classes.specialty_type import SpecialtyType, Specialization
+from models.data_classes.specialty import Specialty, Specialization
 import service.read.read_spec_tax as read_spec_tax
 import logging
 
 log = logging.getLogger(__name__)
 
-def read_specialty() -> SpecialtyType:
+def read_specialty() -> Specialty:
     log.debug("Reading specialty")
     log.debug(f"V_SPEC_TAX:{read_spec_tax.SPEC_TAX}")
     # Paths
@@ -47,6 +47,6 @@ def read_specialty() -> SpecialtyType:
                                                 spec_id=spec_id)
                 log.debug(f"Specialization: {specialization}")
                 specializations.append(specialization)
-    specialty:SpecialtyType = SpecialtyType(specializations=specializations)
+    specialty:Specialty = Specialty(specializations=specializations)
 
     return specialty

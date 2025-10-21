@@ -1,6 +1,6 @@
 from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
 from models.aton.nodes.data_dictionary.dd_qualification_type import DD_QualificationType
-from models.aton.nodes.data_dictionary.dd_specialty import DD_Specialty
+from models.aton.nodes.data_dictionary.dd_specialty_type import DD_SpecialtyType
 from models.aton.nodes.data_dictionary.qualification_types import QualificationTypes
 import logging
 

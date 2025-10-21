@@ -22,7 +22,7 @@ class Specialization:
                 f" spec_id: {self.spec_id}")
 
 @dataclass
-class SpecialtyType:
+class Specialty:
     specializations: list[Specialization] = field(default_factory=list)
 
     def __str__(self):

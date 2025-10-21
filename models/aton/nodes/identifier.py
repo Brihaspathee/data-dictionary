@@ -34,4 +34,4 @@ class LegacySystemIdentifier(Identifier):
     system_id_type: str= StringProperty(required=False, db_property='systemIdType')
     description: str= StringProperty(required=False)
 
-    dd_specialty = RelationshipFrom('models.aton.nodes.data_dictionary.dd_specialty.DD_Specialty', 'DEFINED_BY')
+    dd_specialty = RelationshipFrom('models.aton.nodes.data_dictionary.dd_specialty_type.DD_SpecialtyType', 'HAS_LEGACY_SYSTEM_IDENTIFIER')

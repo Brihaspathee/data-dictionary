@@ -4,7 +4,7 @@ from config import settings
 from db import init_db
 from db.portico_db import PorticoDB
 from models.data_classes.qualification_type import Qualification, QualTypes
-from models.data_classes.specialty_type import SpecialtyType
+from models.data_classes.specialty import Specialty
 from service.read.read_specialty import read_specialty
 from service.read.read_spec_tax import read_spec_tax
 from service.read.read_qualifications import read_qualifications
@@ -28,7 +28,7 @@ def main():
     init_db()
     with portico_db.SessionLocal() as session:
         read_spec_tax(session)
-    specialty: SpecialtyType = read_specialty()
+    specialty: Specialty = read_specialty()
     data_dictionaries.append(specialty)
     data_dictionary = transform(data_dictionaries)
     upsert_data_dictionary(data_dictionary)
