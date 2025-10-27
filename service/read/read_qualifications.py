@@ -5,11 +5,12 @@ import logging
 from typing import Dict, Any
 
 from models.data_classes.qualification_type import Qualification, QualTypes
+from service.read.read_util import read_csv
 
 log = logging.getLogger(__name__)
 
 def read_qualifications() -> QualTypes:
-    log.info("Reading qualifications")
+    log.debug("Reading qualifications")
     # Go up two levels from current file to reach project root
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -30,11 +31,11 @@ def read_qualifications() -> QualTypes:
 
     # Loop through each CSV file in the folder
     for filename in os.listdir(base_dir):
-        log.error("Reading file: {}".format(filename))
+        log.debug("Reading file: {}".format(filename))
         if filename.endswith("qualification_types.csv"):
-            qualification_data = read_qual_csv(filename, base_dir)
+            qualification_data = read_csv(filename, base_dir)
         elif filename.endswith("portico_to_aton_mapping.csv"):
-            portico_to_aton_mapping = read_qual_csv(filename, base_dir)
+            portico_to_aton_mapping = read_csv(filename, base_dir)
 
     # Convert to JSON string
     # json_output_qual = json.dumps(qualification_data, indent=2, ensure_ascii=False)
@@ -46,24 +47,24 @@ def read_qualifications() -> QualTypes:
     # map_qualification(qual_data)
     return map_qualification(qual_data)
 
-def read_qual_csv(file_name:str, base_dir:str) -> list[dict[str, Any]]:
-    data: list[dict[str, Any]] = []
-    file_path = os.path.join(base_dir, file_name)
-    with open(file_path, newline="", encoding="utf-8") as csvfile:
-        reader = csv.DictReader(csvfile)
-
-        # Normalize headers (strip whitespace)
-        reader.fieldnames = [f.strip() for f in reader.fieldnames]
-
-        rows = []
-        for row in reader:
-            # Strip whitespace from values
-            clean_row = {k.strip(): (v.strip() if v else "") for k, v in row.items()}
-            # Skip empty rows (where all values are blank)
-            if any(clean_row.values()):
-                rows.append(clean_row)
-        data = rows
-    return data
+# def read_qual_csv(file_name:str, base_dir:str) -> list[dict[str, Any]]:
+#     data: list[dict[str, Any]] = []
+#     file_path = os.path.join(base_dir, file_name)
+#     with open(file_path, newline="", encoding="utf-8") as csvfile:
+#         reader = csv.DictReader(csvfile)
+#
+#         # Normalize headers (strip whitespace)
+#         reader.fieldnames = [f.strip() for f in reader.fieldnames]
+#
+#         rows = []
+#         for row in reader:
+#             # Strip whitespace from values
+#             clean_row = {k.strip(): (v.strip() if v else "") for k, v in row.items()}
+#             # Skip empty rows (where all values are blank)
+#             if any(clean_row.values()):
+#                 rows.append(clean_row)
+#         data = rows
+#     return data
 
 def map_qualification(qualifications_and_mapping:dict[str,list[dict[str, Any]]]) -> QualTypes:
     quals: list[Qualification] = []

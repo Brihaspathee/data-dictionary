@@ -5,6 +5,8 @@ from typing import Any
 from models.data_classes.organization_type import OrganizationTypesDC, OrganizationCode
 import logging
 
+from service.read.read_util import read_csv
+
 log = logging.getLogger(__name__)
 
 
@@ -30,34 +32,14 @@ def read_organization_types() -> OrganizationTypesDC:
 
     # Loop through each CSV file in the folder
     for filename in os.listdir(base_dir):
-        log.error("Reading file: {}".format(filename))
+        log.debug("Reading file: {}".format(filename))
         if filename.endswith("organization_types.csv"):
-            organization_data = read_org_csv(filename, base_dir)
+            organization_data = read_csv(filename, base_dir)
         elif filename.endswith("portico_to_aton_mapping.csv"):
-            portico_to_aton_mapping = read_org_csv(filename, base_dir)
+            portico_to_aton_mapping = read_csv(filename, base_dir)
     org_data["organization_data"] = organization_data
     org_data["mapping_data"] = portico_to_aton_mapping
     return map_organization(org_data)
-
-def read_org_csv(file_name:str, base_dir:str) -> list[dict[str, Any]]:
-    data: list[dict[str, Any]] = []
-    file_path = os.path.join(base_dir, file_name)
-    with open(file_path, newline="", encoding="utf-8") as csvfile:
-        reader = csv.DictReader(csvfile)
-
-        # Normalize headers (strip whitespace)
-        reader.fieldnames = [f.strip() for f in reader.fieldnames]
-
-        rows = []
-        for row in reader:
-            # Strip whitespace from values
-            clean_row = {k.strip(): (v.strip() if v else "") for k, v in row.items()}
-            # Skip empty rows (where all values are blank)
-            if any(clean_row.values()):
-                rows.append(clean_row)
-        data = rows
-        log.info(f"Portico to ATOM mapping data:{data}")
-    return data
 
 def map_organization(organizations_and_mapping:dict[str,list[dict[str, Any]]]) -> OrganizationTypesDC:
     orgs: list[OrganizationCode] = []
@@ -65,7 +47,6 @@ def map_organization(organizations_and_mapping:dict[str,list[dict[str, Any]]]) -
     for organization in organizations:
         log.debug(f"Organization: {organization}")
         aton_type:str = organization["code"]
-        applicable_entities: list[str] = []
         mapping: dict[str, Any] = get_mapping_data(aton_type, organizations_and_mapping["mapping_data"])
         if mapping:
             orgs.append(OrganizationCode(
