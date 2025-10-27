@@ -56,6 +56,7 @@ def read_org_csv(file_name:str, base_dir:str) -> list[dict[str, Any]]:
             if any(clean_row.values()):
                 rows.append(clean_row)
         data = rows
+        log.info(f"Portico to ATOM mapping data:{data}")
     return data
 
 def map_organization(organizations_and_mapping:dict[str,list[dict[str, Any]]]) -> OrganizationTypesDC:

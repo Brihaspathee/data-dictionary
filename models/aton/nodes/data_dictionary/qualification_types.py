@@ -1,12 +1,13 @@
 from typing import Any
 
-from neomodel import StructuredNode, StringProperty, RelationshipTo, DoesNotExist
+from neomodel import StructuredNode, StringProperty, RelationshipTo, DoesNotExist, RelationshipFrom
 
 
 class QualificationTypes(StructuredNode):
     definition: str = StringProperty(required=True)
 
     dd_qualification_type = RelationshipTo('models.aton.nodes.data_dictionary.dd_qualification_type.DD_QualificationType', 'DEFINED_BY')
+    data_dictionary = RelationshipFrom('models.aton.nodes.data_dictionary.data_dictionary.DataDictionary', 'QUALIFICATIONS_DEFINED')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

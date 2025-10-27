@@ -35,3 +35,7 @@ class LegacySystemIdentifier(Identifier):
     description: str= StringProperty(required=False)
 
     dd_specialty = RelationshipFrom('models.aton.nodes.data_dictionary.dd_specialty_type.DD_SpecialtyType', 'HAS_LEGACY_SYSTEM_IDENTIFIER')
+    dd_qualification_type = RelationshipFrom('models.aton.nodes.data_dictionary.dd_qualification_type.DD_QualificationType',
+                                    'HAS_LEGACY_SYSTEM_IDENTIFIER')
+    dd_organization_type = RelationshipFrom('models.aton.nodes.data_dictionary.dd_organization_type.DD_OrganizationType',
+                                    'HAS_LEGACY_SYSTEM_IDENTIFIER')
