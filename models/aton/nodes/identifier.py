@@ -43,3 +43,8 @@ class LegacySystemIdentifier(Identifier):
     dd_contact_use = RelationshipFrom(
         'models.aton.nodes.data_dictionary.dd_contact_use.DD_ContactUse',
         'HAS_LEGACY_SYSTEM_IDENTIFIER')
+
+    dd_disorder_type = RelationshipFrom('models.aton.nodes.data_dictionary.dd_disorder_type.DD_DisorderType',
+                                        'HAS_LEGACY_SYSTEM_IDENTIFIER')
+    dd_healthcare_service_type = RelationshipFrom('models.aton.nodes.data_dictionary.dd_healthcare_service_type.DD_HealthcareServiceType',
+                                                  'HAS_LEGACY_SYSTEM_IDENTIFIER')
