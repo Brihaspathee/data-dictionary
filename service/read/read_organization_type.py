@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 
 
 def read_organization_types() -> OrganizationTypesDC:
-    log.info("Reading Organization Types")
+    log.debug("Reading Organization Types")
     # Go up two levels from current file to reach project root
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 

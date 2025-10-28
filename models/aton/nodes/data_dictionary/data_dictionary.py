@@ -11,6 +11,7 @@ class DataDictionary(StructuredNode):
     specialty = RelationshipTo('models.aton.nodes.data_dictionary.specialty_type.SpecialtyType', 'SPECIALTIES_DEFINED')
     qualification = RelationshipTo('models.aton.nodes.data_dictionary.qualification_types.QualificationTypes', 'QUALIFICATIONS_DEFINED')
     organization_types = RelationshipTo('models.aton.nodes.data_dictionary.organization_types.OrganizationTypes', 'ORGANIZATION_TYPES_DEFINED')
+    contact_use = RelationshipTo('models.aton.nodes.data_dictionary.contact_use.ContactUse', 'CONTACT_USES_DEFINED')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

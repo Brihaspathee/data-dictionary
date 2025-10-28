@@ -39,3 +39,7 @@ class LegacySystemIdentifier(Identifier):
                                     'HAS_LEGACY_SYSTEM_IDENTIFIER')
     dd_organization_type = RelationshipFrom('models.aton.nodes.data_dictionary.dd_organization_type.DD_OrganizationType',
                                     'HAS_LEGACY_SYSTEM_IDENTIFIER')
+
+    dd_contact_use = RelationshipFrom(
+        'models.aton.nodes.data_dictionary.dd_contact_use.DD_ContactUse',
+        'HAS_LEGACY_SYSTEM_IDENTIFIER')

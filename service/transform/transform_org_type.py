@@ -15,7 +15,7 @@ def transform_org_type(org_types: OrganizationTypesDC, data_dictionary:DataDicti
                                                                         value=org_type.value,
                                                                         description=org_type.description)
         dd_organization_type.context = DDOrganizationTypeContext(dd_organization_type)
-        organization_types.context.add_dd_organization_type(dd_organization_type)
+        # organization_types.context.add_dd_organization_type(dd_organization_type)
         if org_type.portico_prov_type and org_type.systemIdType:
             legacy_id = LegacySystemIdentifier(value=org_type.portico_prov_type,
                                                description=None,

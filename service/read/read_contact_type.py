@@ -11,7 +11,7 @@ log = logging.getLogger(__name__)
 
 
 def read_contact_types() -> ContactTypesDC:
-    log.info("Reading Contact Types")
+    log.debug("Reading Contact Types")
     # Go up two levels from current file to reach project root
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -45,7 +45,7 @@ def map_contact(contacts_and_mapping:dict[str,list[dict[str, Any]]]) -> ContactT
     contact_type_list: list[ContactType] = []
     contacts: list[dict[str, Any]] = contacts_and_mapping["contact_data"]
     for contact in contacts:
-        log.info(f"Contact: {contact}")
+        log.debug(f"Contact: {contact}")
         aton_type:str = contact["code"]
         mapping: dict[str, Any] = get_mapping_data(aton_type, contacts_and_mapping["mapping_data"])
         if mapping:
