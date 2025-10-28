@@ -1,0 +1,114 @@
+code,value,classification,description
+TOB,Treatement for tobacco issues,TREATMENT_MODALITIES,Treatement for tobacco issues
+SEN_PRO_INT,Sensory Processing/Integration,TREATMENT_MODALITIES,Sensory Processing/Integration
+SEC_ADD,Sexual Compulsions/Addictions,TREATMENT_MODALITIES,Sexual Compulsions/Addictions
+SEX_TH,Sex Therapy,TREATMENT_MODALITIES,Sex Therapy
+SOL_EMP,Solution Empowerment Therapy,TREATMENT_MODALITIES,Solution Empowerment Therapy
+TOB_CES,Tobacco Cessation,TREATMENT_MODALITIES,Tobacco Cessation
+TRA_FOC,Trauma Focused,TREATMENT_MODALITIES,Trauma Focused
+WEG_MGMT,Weight Management,TREATMENT_MODALITIES,Weight Management
+GES,Gestalt,TREATMENT_MODALITIES,Gestalt
+MOOD_DIS,Treatment of Mood disorders,TREATMENT_MODALITIES,Treatment of Mood disorders
+PLAY_TH,Play Therapy,TREATMENT_MODALITIES,Play Therapy
+ABA,Applied Behavior Analysis (ABA),TREATMENT_MODALITIES,Applied Behavior Analysis (ABA)
+ADHD_TEST,ADD/ADHD Testing,TREATMENT_MODALITIES,ADD/ADHD Testing
+ADD_DIS,Treatment of additive disorders,TREATMENT_MODALITIES,Treatment of additive disorders
+ADO_PSY,Adolescent Psychotherapy,TREATMENT_MODALITIES,Adolescent Psychotherapy
+ADO_SEX_OFF,Adolescent Sex Offender,TREATMENT_MODALITIES,Adolescent Sex Offender
+ADO_PSY,Adolescent Psychiatry,TREATMENT_MODALITIES,Adolescent Psychiatry
+ADO_ISS,Adoption Issues,TREATMENT_MODALITIES,Adoption Issues
+ALC_ASSESS,Alcohol/SA Assessments,TREATMENT_MODALITIES,Alcohol/SA Assessments
+ALC_TRT,Alcohol/SA Treatment,TREATMENT_MODALITIES,Alcohol/SA Treatment
+ANG_MGMT,Anger Management,TREATMENT_MODALITIES,Anger Management
+ART_TH,Art Therapy,TREATMENT_MODALITIES,Art Therapy
+ATT_TH,Attachment Therapy,TREATMENT_MODALITIES,Attachment Therapy
+BH_TH,Behavioral Therapy,TREATMENT_MODALITIES,Behavioral Therapy
+CHD_PSY_TES,Child Psychological Testing,TREATMENT_MODALITIES,Child Psychological Testing
+CHD_PSY,Child Psychiatry,TREATMENT_MODALITIES,Child Psychiatry
+CHR_COUN,Christian Counseling,TREATMENT_MODALITIES,Christian Counseling
+CLI_CTR_TH,Client Center Therapy,TREATMENT_MODALITIES,Client Center Therapy
+CRI_INT,Crisis Intervention,TREATMENT_MODALITIES,Crisis Intervention
+CRI_STB,Crisis Stabilization,TREATMENT_MODALITIES,Crisis Stabilization
+DBT,Dialectical Behavioral Therapy,TREATMENT_MODALITIES,Dialectical Behavioral Therapy
+DEV_EVAL,Developmental Evaluation,TREATMENT_MODALITIES,Developmental Evaluation
+DOM_VIO,Domestic Violence,TREATMENT_MODALITIES,Domestic Violence
+GER_PSY,Geriatric Psychiatry,TREATMENT_MODALITIES,Geriatric Psychiatry
+IFI,Intensive Family Intervention,TREATMENT_MODALITIES,Intensive Family Intervention
+INT_ASSESS,Intake Assessment,TREATMENT_MODALITIES,Intake Assessment
+INT_OP,Intensive Outpatient,TREATMENT_MODALITIES,Intensive Outpatient
+MET_MED_SER,Methadone/Suboxone Medication Services,TREATMENT_MODALITIES,Methadone/Suboxone Medication Services
+NLP,Neuro-Linguistic Programming (NLP),TREATMENT_MODALITIES,Neuro-Linguistic Programming (NLP)
+OUT_ORT_TH,Outcomes Oriented Therapy,TREATMENT_MODALITIES,Outcomes Oriented Therapy
+PAIN_MGMT,Pain Management,TREATMENT_MODALITIES,Pain Management
+PAR_CHD_TH,Parent-Child Therapy,TREATMENT_MODALITIES,Parent-Child Therapy
+PSYCHOANALYTIC,Psychoanalytic Therapy,TREATMENT_MODALITIES,Psychoanalytic Therapy
+PSYCHODYNAMIC,Psychodynamic Therapy,TREATMENT_MODALITIES,Psychodynamic Therapy
+PSYCHOPHARM,Psychopharmacology,TREATMENT_MODALITIES,Psychopharmacology
+RAT_EM_TH,Rationale Emotive Therapy,TREATMENT_MODALITIES,Rationale Emotive Therapy
+REL_DIS,Treatment of relationship disorders,TREATMENT_MODALITIES,Treatment of relationship disorders
+FAM_SYS,Treatment of Family systems,TREATMENT_MODALITIES,Treatment of Family systems
+CRT,Cognitive Rehab Therapy,TREATMENT_MODALITIES,Cognitive Rehab Therapy
+CPP,Child Parent Psychotherapy (CPP),TREATMENT_MODALITIES,Child Parent Psychotherapy (CPP)
+CBT_BH,"CBT for Anxiety, Behaviors and Depression",TREATMENT_MODALITIES,"CBT for Anxiety, Behaviors and Depression"
+PCIT,Parent Child Interaction Therapy (PCIT),TREATMENT_MODALITIES,Parent Child Interaction Therapy (PCIT)
+STR_FM_PRG,Strengthening Families Program,TREATMENT_MODALITIES,Strengthening Families Program
+THER_MOD,Theraplay Model (Promising Practice),TREATMENT_MODALITIES,Theraplay Model (Promising Practice)
+TF_CBT,Trauma Focused Cognitive Behavioral Therapy (TF-CBT),TREATMENT_MODALITIES,Trauma Focused Cognitive Behavioral Therapy (TF-CBT)
+TIC,Trauma Informed Care (TIC),TREATMENT_MODALITIES,Trauma Informed Care (TIC)
+TRIP_P_LEV_2,Triple P (Positive parenting program)Level 2 ,TREATMENT_MODALITIES,Triple P (Positive parenting program)Level 2 
+TRIP_P_LEV_3,Triple P (Positive parenting program)Level 3,TREATMENT_MODALITIES,Triple P (Positive parenting program)Level 3
+TBRI,Trust Based Relational Intervention (TBRI),TREATMENT_MODALITIES,Trust Based Relational Intervention (TBRI)
+IDD,Intellectual Development Disorders,TREATMENT_MODALITIES,Intellectual Development Disorders
+PTSD,Treatment of Post Traumatic Stress Disorder,TREATMENT_MODALITIES,Treatment of Post Traumatic Stress Disorder
+GAM_PRB,Treatment of gaming problems,TREATMENT_MODALITIES,Treatment of gaming problems
+MHRS,Mental Health Rehabilitation Services,TREATMENT_MODALITIES,Mental Health Rehabilitation Services
+MHTCM,Mental Health Targeted Case Management,TREATMENT_MODALITIES,Mental Health Targeted Case Management
+CSP,Community Support Program,TREATMENT_MODALITIES,Community Support Program
+CSP_HOM,Community Support Program Homeless,TREATMENT_MODALITIES,Community Support Program Homeless
+OB,OB,TREATMENT_MODALITIES,OB
+MAT,Medication Assisted Treatment (MAT),TREATMENT_MODALITIES,Medication Assisted Treatment (MAT)
+CER_ALC_DRG_COUN,Certified Alcohol and Drug Counselor,TREATMENT_MODALITIES,Certified Alcohol and Drug Counselor
+CRT_ORD_MEN_EVAL,Court Ordered Mental Evaluation,TREATMENT_MODALITIES,Court Ordered Mental Evaluation
+NUT_COUN,Nutritional Counseling,TREATMENT_MODALITIES,Nutritional Counseling
+ITCT,Integrative Treatment of Complex Trauma,TREATMENT_MODALITIES,Integrative Treatment of Complex Trauma
+LCCCP,LCCCP,TREATMENT_MODALITIES,LCCCP
+BH_MGMT_SER,Behavioral Management Services,TREATMENT_MODALITIES,Behavioral Management Services
+ADD_ADHD,ADD-ADHD,TREATMENT_MODALITIES,ADD-ADHD
+ADJ_DISORD,Treatment of adjustment disorders,TREATMENT_MODALITIES,Treatment of adjustment disorders
+ANX_DISORD,Treatment of anxiety disorders,TREATMENT_MODALITIES,Treatment of anxiety disorders
+ATT_DISORD,Treatment of attachment disorders,TREATMENT_MODALITIES,Treatment of attachment disorders
+AUT_SPEC,Autism Spectrum,TREATMENT_MODALITIES,Autism Spectrum
+COG_BH_TH,Cognitive Behavioral Therapy,TREATMENT_MODALITIES,Cognitive Behavioral Therapy
+DIS_DISORD,Dissociative Disorders,TREATMENT_MODALITIES,Dissociative Disorders
+DISR_BH_DISORD,Disruptive Behavior Disorders,TREATMENT_MODALITIES,Disruptive Behavior Disorders
+EAT_DISORD,Eating Disorders,TREATMENT_MODALITIES,Eating Disorders
+IMP_DISORD,Impulse Disorders,TREATMENT_MODALITIES,Impulse Disorders
+FET_ALC_SYN,Fetal Alcohol Syndrome,TREATMENT_MODALITIES,Fetal Alcohol Syndrome
+TBS,Therapeutic Behavioral Services,TREATMENT_MODALITIES,Therapeutic Behavioral Services
+MST,Multi-Systemic Therapy (MST),TREATMENT_MODALITIES,Multi-Systemic Therapy (MST)
+CBT_FOR_INS,CBT For Insomnia,TREATMENT_MODALITIES,CBT For Insomnia
+DYD_DEV_TRT,Dyadic Development Treatment,TREATMENT_MODALITIES,Dyadic Development Treatment
+NTX_MAG_STI,Naltrexone/Vivitrol,TREATMENT_MODALITIES,Naltrexone/Vivitrol
+TRN_MAG_STI,Transcranial Magnetic Stimulation,TREATMENT_MODALITIES,Transcranial Magnetic Stimulation
+FST,Family Support and Training,TREATMENT_MODALITIES,Family Support and Training
+SFT,Solution Focused Therapy,TREATMENT_MODALITIES,Solution Focused Therapy
+EVAL,Evaluation/Assessment,TREATMENT_MODALITIES,Evaluation/Assessment
+RELAPSE,Relapse Prevention,TREATMENT_MODALITIES,Relapse Prevention
+GP_TH,Group Therapy,TREATMENT_MODALITIES,Group Therapy
+INDIV,Individual Therapy,TREATMENT_MODALITIES,Individual Therapy
+FAMILY,Family Therapy,TREATMENT_MODALITIES,Family Therapy
+PSY_TES,Psychological Testing,TREATMENT_MODALITIES,Psychological Testing
+NEU_PSY_TES,Neuropsychological Testing,TREATMENT_MODALITIES,Neuropsychological Testing
+CRI_MGMT,Crisis Management,TREATMENT_MODALITIES,Crisis Management
+BIO_FB,Biofeedback,TREATMENT_MODALITIES,Biofeedback
+HYNOSIS,Hypnosis,TREATMENT_MODALITIES,Hypnosis
+STR_MGMT,Stress Management,TREATMENT_MODALITIES,Stress Management
+MED_MGMT,Medication Management,TREATMENT_MODALITIES,Medication Management
+COU_TH,Couples Therapy,TREATMENT_MODALITIES,Couples Therapy
+CHEM_DEP_ASSES,Chemical Dependency Assessment,TREATMENT_MODALITIES,Chemical Dependency Assessment
+COG_TH,Cognitive Therapy,TREATMENT_MODALITIES,Cognitive Therapy
+EMDR,Eye movement desensitization and reprocessing,TREATMENT_MODALITIES,Eye movement desensitization and reprocessing
+ECT,Electroconvulsive Therapy,TREATMENT_MODALITIES,Electroconvulsive Therapy
+CITT_INC_BRF,Critical Incident Debriefing,TREATMENT_MODALITIES,Critical Incident Debriefing
+BRIEF,Treatment of brief therapy,TREATMENT_MODALITIES,Treatment of brief therapy
+OTH,Other treatment,TREATMENT_MODALITIES,Other treatment
