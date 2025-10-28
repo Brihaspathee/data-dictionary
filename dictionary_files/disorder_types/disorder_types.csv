@@ -1,0 +1,156 @@
+code,value,description
+OCD,OBSESSIVE COMPULSIVE D/O,OBSESSIVE COMPULSIVE D/O
+DISABLED,Disabled,Disabled
+ADD_MED,Addictive Medicine,Addictive Medicine
+ADOL_BEH,Adolescent Behavior Disorders,Adolescent Behavior Disorders
+ADOPTION,Adoption Issues,Adoption Issues
+ANGER_MGMT,Anger Management,Anger Management
+ATTACH_DISORDER,Attachment Disorder,Attachment Disorder
+AUT_ASP,Autism/Aspergers,Autism/Aspergers
+BIPOLAR,Bipolar Disorders,Bipolar Disorders
+BT,Brief Therapy,Brief Therapy
+CHEM_DEP,Chemical Dependency,Chemical Dependency
+CHD_PRNT_BOND,Child/Parent Bonding,Child/Parent Bonding
+CHRIS_SPIRIT,Christian Spiritual,Christian Spiritual Growth Counseling
+COG_DISORDER,Cognitive Disorder,Cognitive Disorder
+CONCUSSION,Concussion,Concussion
+CRIM_OFF,Criminal Offenders,Criminal Offenders
+CRISIS_STAB,Crisis Stabilization,Crisis Stabilization Services
+DEMENTIA,Dementia Disorder,Dementia Disorder
+DEV_DISORDER,Development Disorder,Development Disability/Disorder
+DISRUPTIVE_BEH,Disruptive Behavior,Disruptive Behavior
+DISSOC_DISORDER,Dissociative Disorder,Dissociative Disorder
+DUAL_DIAG,Dual Diagnosis,Dual Diagnosis
+EQU_ASSIST_TH,Equine Assisted Therapy,Equine Assisted Therapy
+FAM_DYS,Family Dysfunction,Family Dysfunction
+FEED_DISORDER,Feeding Disorders,Feeding Disorders
+GENDER_ID_ISSUES,Gender Identity Issues,Gender Identity Issues
+GRF_LOSS_BREAV,Grief/Loss/Bereavement,Grief/Loss/Bereavement
+HEAD_TRAUME,Head Trauma,Head Trauma
+HOME_VISITS,Home Visits,Home Visits
+INPAT_ATTEND,Inpatient Attending,Inpatient Attending
+INPAT_CONSULT,Inpatient Consult MD,Inpatient Consult MD
+LEARN_DISAB,Learning Disability,Learning Disability
+MARITAL_ISSUES,Marital Issues,Marital Issues
+MED_EVAL,Medical Evaluation,Medical Evaluation
+MEN_ISSUES,Men Issues,Men Issues
+IDD,Intellectual or Developmental Disability (IDD),Intellectual or Developmental Disability (IDD)
+ODD,Oppositional Defiant Disorder,Oppositional Defiant Disorder
+OMD,Organic Mental Disorder,Organic Mental Disorder
+PAN_DISORDER,Panic Disorder,Panic Disorder
+PHOB,Phobias,Phobias
+PHY_ABUSE,Physical Abuse,Physical Abuse
+PPD,Post Partum Disorder,Post Partum Disorder
+RAD,Reactive Attachment Disorder,Reactive Attachment Disorder
+REL_PREV,Relapse Prevention,Relapse Prevention
+SEL_INJURY,Self Injury,Self Injury
+SERIOUS_AODS,Serious/Persistent Mental Illness,Serious/Persistent Mental Illness
+SEX_DIS,Sexual Disorders,Sexual Disorders
+SEX_INCEST,Sexual Abuse/Incest,Sexual Abuse/Incest
+SEX_OFFENDERS,Sexual Offenders,Sexual Offenders
+SLE_DIS,Sleep Disorder,Sleep Disorder
+STE_STEP,Step/Blended Families,Step/Blended Families
+SUB_ABUSE,Substance Abuse,Substance Abuse
+SUIC,Suicide,Suicide
+TOB_TOBACCO,Tobacco Cessation,Tobacco Cessation
+WOM_ISSUES,Women Issues,Women Issues
+HIV_AODS,HIV/AIDS,HIV/AIDS
+FL_ADOL_CHD_ISSUES,FL ADOLESCENT/CHILDRENS ISSUES (2YR CLINICAL EXP),FL ADOLESCENT/CHILDRENS ISSUES (2YR CLINICAL EXP)
+FL_ADOP_ATTACH,FL ADOPTION/ATTACHMENT ISSUES (2YR CLINICAL EXP),FL ADOPTION/ATTACHMENT ISSUES (2YR CLINICAL EXP)
+FL_BH_ANALYSIS,FL BEHAVIORAL ANALYSIS (2YR CLINICAL EXP),FL BEHAVIORAL ANALYSIS (2YR CLINICAL EXP)
+FL_BH_MGMT_ALT_TH,FL BEHAVIORAL MANAGEMENT/ALTERNATIVE THERAPY (2YR),FL BEHAVIORAL MANAGEMENT/ALTERNATIVE THERAPY (2YR)
+FL_CHD_PRO_FOS_CARE,FL CHILD PROTECTION/FOSTER CARE (2YR CLINICAL EXP),FL CHILD PROTECTION/FOSTER CARE (2YR CLINICAL EXP)
+FL_CRT_ORD_MNTL_ISS,FL COURT ORD MENTAL HEALTH ISSUES (2YR CLINICAL EXP),FL COURT ORD MENTAL HEALTH ISSUES (2YR CLINICAL EXP)
+FL_DEV_DISAB,FL DEVELOPMENTAL DISABILITIES (2YR CLINICAL EXP),FL DEVELOPMENTAL DISABILITIES (2YR CLINICAL EXP)
+FL_DOM_VIO_AD,FL DOMESTIC VIOLENCE ADULT (2YR CLINICAL EXP),FL DOMESTIC VIOLENCE ADULT (2YR CLINICAL EXP)
+FL_DOM_VIO_CHD,FL DOMESTIC VIOLENCE CHILD (2YR CLINICAL EXP),FL DOMESTIC VIOLENCE CHILD (2YR CLINICAL EXP)
+FL_DUAL_DIAG_MEN_DD,FL DUAL DIAGNOSIS MENTAL/DEVEL DIS (2YR CLINICAL EXP),FL DUAL DIAGNOSIS MENTAL/DEVEL DIS (2YR CLINICAL EXP)
+FL_DUAL_DIAG_MEN_SS,FL DUAL DIAGNOSIS MENTAL/SUBSTANCE (2YR CLINICAL EXP),FL DUAL DIAGNOSIS MENTAL/SUBSTANCE (2YR CLINICAL EXP)
+FL_EAT_DISORDER,FL EATING DISORDERS (2YR CLINICAL EXP),FL EATING DISORDERS (2YR CLINICAL EXP)
+FL_EXPRT_WIT,FL EXPERT WITNESS TESTIMONY (2YR CLINICAL EXP),FL EXPERT WITNESS TESTIMONY (2YR CLINICAL EXP)
+FL_GEN_ISS,FL GENDER/SEXUAL ISSUES (2YR CLINICAL EXP),FL GENDER/SEXUAL ISSUES (2YR CLINICAL EXP)
+FL_GER_AG_ISS,FL GERIATRICS/AGING ISSUES (2YR CLINICAL EXP),FL GERIATRICS/AGING ISSUES (2YR CLINICAL EXP)
+FL_PTSD,FL POST TRAUMATIC STRESS SYNDROME/DISORDER (2YR EXP),FL POST TRAUMATIC STRESS SYNDROME/DISORDER (2YR EXP)
+FL_SEP_GRF,FL SEPERATION GRIEF/LOSS (2YR CLINICAL EXP),FL SEPERATION GRIEF/LOSS (2YR CLINICAL EXP)
+FL_SEX_ABS_A,FL SEXUAL/PHYSICAL ABUSE ADULT (2YR CLINICAL EXP),FL SEXUAL/PHYSICAL ABUSE ADULT (2YR CLINICAL EXP)
+FL_SEX_ABS_C,FL SEXUAL/PHYSICAL ABUSE CHILD (2YR CLINICAL EXP),FL SEXUAL/PHYSICAL ABUSE CHILD (2YR CLINICAL EXP)
+FL_VIC_PERP_CRIME,FL VICTIMS/PERPETRATORS VIOLENCE/VIOLENT CRIMES (2YR),FL VICTIMS/PERPETRATORS VIOLENCE/VIOLENT CRIMES (2YR)
+FL_VIC_SEX_ABUSE,FL VICTIMS / SEXUAL ABUSE (2YR CLINICAL EXP),FL VICTIMS / SEXUAL ABUSE (2YR CLINICAL EXP)
+COD,Co-Occurring Disorders,Co-Occurring Disorders
+EMTL,Emotional,Emotional
+BH,Behavioral,Behavioral
+MOB,Mobility,Mobility
+CI,CHRONIC ILLNESS,CHRONIC ILLNESS
+DHH,DEAFNESS OR HARD-OF-HEARING,DEAFNESS OR HARD-OF-HEARING
+HL,HOMELESSNESS,HOMELESSNESS
+SMI,SERIOUS MENTAL ILLNESS,SERIOUS MENTAL ILLNESS
+OAS,OTHER AREAS OF SPECIALTY,OTHER AREAS OF SPECIALTY
+PHY_DIS,PHYSICAL DISABILITIES,PHYSICAL DISABILITIES
+VIS_IMP,BLINDNESS OR VISUAL IMPAIRMENT,BLINDNESS OR VISUAL IMPAIRMENT
+GER_AGE_ISS,Geriatric/Aging Issues,Geriatric/Aging Issues
+CHD_WELFARE_ISS,Child Welfare Issues,Child Welfare Issues
+EXPERT_WIT_TEST,Expert Witness Testimony,Expert Witness Testimony
+GAM,Gambling,Gambling
+JUV_JUS_ISS,Juvenile Justice Issues,Juvenile Justice Issues
+LEAD_ANALYST,Lead Analyst,Lead Analyst
+MOL_GEN,Molecular Genetic,Molecular Genetic
+MUL_SCL,Multiple Sclerosis,Multiple Sclerosis
+SEX_TRF,Sex Trafficking,Sex Trafficking
+SPEC_CHD_SER,Specialized Children Services,Specialized Children Services
+SUP_EMP,Supported Employment,Supported Employment
+TRACH,Tracheostomy,Tracheostomy
+ABA_AUT_GRP,Autism Treatment Services - ABA (Group Practice),Autism Treatment Services - ABA (Group Practice)
+ABA_AUT_PRA,Autism Treatment Services - ABA (Independent Practitioner),Autism Treatment Services - ABA (Independent Practitioner)
+CON_DAY_TRT,Continuing Day Treatment,Continuing Day Treatment
+DIR_AUT_GRP,Autism Treatment Services - DIR (Group Practice),Autism Treatment Services - DIR (Group Practice)
+DIR_AUT_PRAC,Autism Treatment Services - DIR (Independent Practitioner),Autism Treatment Services - DIR (Independent Practitioner)
+DYD_CARE,Dyadic Care,Dyadic Care
+STR_MED,Street Medicine,Street Medicine
+NLP,NLP,NLP
+SOL_FOC_THERAPY,Solution Focused Therapy,Solution Focused Therapy
+DEP_DISORDER,Dependence Disorders,Dependence Disorders
+IP_DET,Inpatient Medical Detox (ASAM 4WM),Inpatient Medical Detox (ASAM 4WM)
+NON_MED_DET,Nonmedical Detox Facility - ASAM 3.7 WM,Nonmedical Detox Facility - ASAM 3.7 WM
+SHT_TRM_SUBS_ABD,Short Term Residential - Substance Use Disorder - ASAM 3.7,Short Term Residential - Substance Use Disorder - ASAM 3.7
+SUBS_USE_DIS_LTR,Substance Use Disorder Long Term Residential (LTR) ASAM 3.5,Substance Use Disorder Long Term Residential (LTR) ASAM 3.5
+AMB_WTD_MGMT,Ambulatory Withdrawal Management - ASAM 2WM,Ambulatory Withdrawal Management - ASAM 2WM
+INT_OP_SUB_USE,Intensive Outpatient Substance Use Disorder SUD - ASAM 2.1,Intensive Outpatient Substance Use Disorder SUD - ASAM 2.1
+PAR_CAR_SUB_ABS_DIS,Partial Care-Substance Use Disorder - ASAM 2.5,Partial Care-Substance Use Disorder - ASAM 2.5
+OPD_TX,Opioid Treatment (Tx) Services - ASAM OTP,Opioid Treatment (Tx) Services - ASAM OTP
+OPD_TX_NMI,Opioid Tx - Non-Meth (Institutional),Opioid Tx - Non-Meth (Institutional)
+OPD_TX_NMS,Opioid Tx - Non-Meth (Specialist) - ASAM OBAT,Opioid Tx - Non-Meth (Specialist) - ASAM OBAT
+OPD_TX_NMM,Opioid Tx - Non-Meth-MAT (Independent Practitioner - SUD),Opioid Tx - Non-Meth-MAT (Independent Practitioner - SUD)
+MED_ASSIST_TRT_WH_NAV,Medication Assisted Treatment in Physician Office (w/ Navigator),Medication Assisted Treatment in Physician Office (w/ Navigator)
+MED_ASSIST_TRT_WO_NAV,Medication Assisted Treatment in Physician Office (w/o Navigator),Medication Assisted Treatment in Physician Office (w/o Navigator)
+PREG_POST_RLT_MH,Pregnancy and postpartum related mental health,Pregnancy and postpartum related mental health
+PREG_POST_SUBS_ABS_DIS,Pregnancy and postpartum substance use disorders,Pregnancy and postpartum substance use disorders
+FAC_DISORDER,Facitious Disorders,Facitious Disorders
+GEN_DYS,Gender Dysphoria,Gender Dysphoria
+SOM_SYM_DISORDER,Somatic Symptoms and Related Disorders,Somatic Symptoms and Related Disorders
+SUB_ABS_DISORDER_OP,Substance Use Disorder Outpatient (OP) - ASAM 1,Substance Use Disorder Outpatient (OP) - ASAM 1
+ADD_DISORDER,Addictive Disorders,Addictive Disorders
+ADD_ADHD,ADD/ADHD,ADD/ADHD
+ADL_ADD,Adult ADD,Adult ADD
+ADJ_DIS,Adjustment Disorder,Adjustment Disorder
+ANX_DIS,ANXIETY/PANIC DISORDER,Anxiety Disorder
+CHR_ILL,Chronic Pain/Pain Management,Chronic Pain/Pain Management
+DEPRESSSION,Depression,Depression
+CUL_ISS,Cultural Issues,Cultural Issues
+DOM_ABS,Domestic Violence,Domestic Violence
+EAT_DIS,Eating Disorders,Eating Disorders
+INFERTILITY,Infertility,Infertility
+LOSS,Loss/Bereavement,Loss/Bereavement
+CHR_ILL,Chronic Illness,Chronic Illness
+MOOD_DISORDER,Mood Disorders,Mood Disorders
+PARENTING,Parenting Issues,Parenting Issues
+PERS_DISORDER,Personality Disorders,Personality Disorders
+SCHIZ,Schizophrenia,Schizophrenia
+SEP_DIVORCE,Separation/Divorce,Separation/Divorce
+SEX_DYS,Sexual Dysfunction,Sexual Dysfunction
+SEX_PHY_ABS_ADL,Sexual/Physical Abuse (Adults),Sexual/Physical Abuse (Adults)
+SEX_PHY_ABS_CHD,Sexual/Physical Abuse (Children),Sexual/Physical Abuse (Children)
+IMPULSE,Impulse Disorders,Impulse Disorders
+STRESS_MGMT,Stress Management,Stress Management
+TRAUMA,Trauma/PTSD,Trauma/PTSD
+WRK_RLT_PROB,Work Related Problems,Work Related Problems
+OTH,Other,Other
