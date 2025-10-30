@@ -1,4 +1,4 @@
-from models.aton.nodes.data_dictionary.context.dd_healthcare_service_type import DDHealthcareServiceTypeContext
+from models.aton.nodes.data_dictionary.context.dd_healthcare_service_type_context import DDHealthcareServiceTypeContext
 from models.aton.nodes.data_dictionary.context.healthcare_service_type_context import HealthcareServiceTypesContext
 from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
 from models.aton.nodes.data_dictionary.dd_healthcare_service_type import DD_HealthcareServiceType

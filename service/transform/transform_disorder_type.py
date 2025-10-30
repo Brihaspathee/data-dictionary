@@ -1,4 +1,4 @@
-from models.aton.nodes.data_dictionary.context.dd_disorder_type import DDDisorderTypeContext
+from models.aton.nodes.data_dictionary.context.dd_disorder_type_context import DDDisorderTypeContext
 from models.aton.nodes.data_dictionary.context.disorder_types_context import DisorderTypesContext
 from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
 from models.aton.nodes.data_dictionary.dd_disorder_type import DD_DisorderType
