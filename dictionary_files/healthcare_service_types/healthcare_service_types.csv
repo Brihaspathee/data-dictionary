@@ -13,7 +13,7 @@ PLAY_TH,Play Therapy,TREATMENT_MODALITIES,Play Therapy
 ABA,Applied Behavior Analysis (ABA),TREATMENT_MODALITIES,Applied Behavior Analysis (ABA)
 ADHD_TEST,ADD/ADHD Testing,TREATMENT_MODALITIES,ADD/ADHD Testing
 ADD_DIS,Treatment of additive disorders,TREATMENT_MODALITIES,Treatment of additive disorders
-ADO_PSY,Adolescent Psychotherapy,TREATMENT_MODALITIES,Adolescent Psychotherapy
+ADO_PSY_TH,Adolescent Psychotherapy,TREATMENT_MODALITIES,Adolescent Psychotherapy
 ADO_SEX_OFF,Adolescent Sex Offender,TREATMENT_MODALITIES,Adolescent Sex Offender
 ADO_PSY,Adolescent Psychiatry,TREATMENT_MODALITIES,Adolescent Psychiatry
 ADO_ISS,Adoption Issues,TREATMENT_MODALITIES,Adoption Issues

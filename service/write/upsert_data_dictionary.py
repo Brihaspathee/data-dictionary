@@ -1,5 +1,7 @@
 from models.aton.nodes.data_dictionary.data_dictionary import DataDictionary
 from service.write.upsert_contact_use import upsert_contact_use
+from service.write.upsert_disorder_type import upsert_disorder_type
+from service.write.upsert_healthcare_service_type import upsert_hs_type
 from service.write.upsert_organization_types import upsert_organization_type
 from service.write.upsert_specialty import upsert_specialty
 from service.write.upsert_qualification import upsert_qualification
@@ -22,3 +24,7 @@ def upsert_data_dictionary(data_dictionary: DataDictionary):
     if data_dictionary.context.get_contact_use():
         log.info("Upserting contact use")
         upsert_contact_use(data_dictionary.context.get_contact_use(), dd)
+    if data_dictionary.context.get_disorder_types():
+        upsert_disorder_type(data_dictionary.context.get_disorder_types(), dd)
+    if data_dictionary.context.get_healthcare_service_types():
+        upsert_hs_type(data_dictionary.context.get_healthcare_service_types(), dd)

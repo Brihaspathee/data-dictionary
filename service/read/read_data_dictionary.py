@@ -39,4 +39,6 @@ def read_data_dictionary() -> list[Any]:
     data_dictionaries.append(org_types)
     data_dictionaries.append(contact_types)
     data_dictionaries.append(specialty)
+    data_dictionaries.append(disorder_types)
+    data_dictionaries.append(healthcare_service_types)
     return data_dictionaries
